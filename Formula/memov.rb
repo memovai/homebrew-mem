@@ -3,25 +3,25 @@
 
 class Memov < Formula
   desc "AI-powered version control tool - memory layer for AI coding agents"
-  homepage "https://github.com/IRONICBo/mem-mcp-server"
-  version "0.0.12"
+  homepage "https://github.com/memovai/memov"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/IRONICBo/mem-mcp-server/releases/download/v0.0.12/mem-macos-x86_64.tar.gz"
-      sha256 "20f5918962a583c19cba0d0dc34d75801b8c3827c1445355c076526124a02e1d"
+      url "https://github.com/memovai/memov/releases/download/v0.0.3/mem-macos-x86_64.tar.gz"
+      sha256 "15b08ce00c6f8ba1e60e4257e4b0e82e632712a0a1c4088e44baf0fce976e14e"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/IRONICBo/mem-mcp-server/releases/download/v0.0.12/mem-macos-arm64.tar.gz"
-      sha256 "b3e94407b4a40b62ca349a8176e4e5beef8f0ad90c30599dcca325354bf67f04"
+      url "https://github.com/memovai/memov/releases/download/v0.0.3/mem-macos-arm64.tar.gz"
+      sha256 "c391a52cddb7b573cd5efdb1f3c4fd556d446320b101aae0a60a61b3f8864248"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/IRONICBo/mem-mcp-server/releases/download/v0.0.12/mem-linux-x86_64.tar.gz"
-      sha256 "12bb3d7d6dca6093a20bc8105c8dba9204ce4791a365fe5a0efbf97c8b840d60"
+      url "https://github.com/memovai/memov/releases/download/v0.0.3/mem-linux-x86_64.tar.gz"
+      sha256 "c3bc034fb106656d8246aec8b3533cca1e14fe7211df86d6d967f58bc2b51f8c"
     end
   end
 
