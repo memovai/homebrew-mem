@@ -4,24 +4,24 @@
 class Memov < Formula
   desc "AI-powered version control tool - memory layer for AI coding agents"
   homepage "https://github.com/memovai/memov"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/memovai/memov/releases/download/v0.0.4/mem-macos-x86_64.tar.gz"
-      sha256 "dd2edf28d50fc61e2428a315a5d1c331657d1b131c1dd9ffebdbc8f4fd69333f"
+      url "https://github.com/memovai/memov/releases/download/v0.0.5/mem-macos-x86_64.tar.gz"
+      sha256 "c07f8dc445d48e7862ba2934fb4d0d80aab3d424e428f5aed35be72f5bfc0361"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/memovai/memov/releases/download/v0.0.4/mem-macos-arm64.tar.gz"
-      sha256 "4f83997defe95612e4cecdab9dd5e9228bbdda4dc03efad0a735c791515e7ac5"
+      url "https://github.com/memovai/memov/releases/download/v0.0.5/mem-macos-arm64.tar.gz"
+      sha256 "41a08f787210d9ed5cfab02fe14468c33bc15744e8307cf139d736a3616b502e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/memovai/memov/releases/download/v0.0.4/mem-linux-x86_64.tar.gz"
-      sha256 "20ddac8167f7fa087037957f0bf5554e722cd450d61fdd9f1ae38dd5003f98fb"
+      url "https://github.com/memovai/memov/releases/download/v0.0.5/mem-linux-x86_64.tar.gz"
+      sha256 "4264cea20ec79f8f400eca63167389708205cd512028abe6a33db215505098a7"
     end
   end
 
