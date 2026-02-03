@@ -10,18 +10,18 @@ class Memov < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/memovai/memov/releases/download/v0.0.8/mem-macos-x86_64.tar.gz"
-      sha256 "b1920de21f955b6b5f52df64d31df727d00ebb1dc3bd4badf75c1e646fb3e332"
+      sha256 "c968de912cb7588272de637a5b0d1ac8f1a91057e70b58c40ce5849ab73c6649"
     end
     if Hardware::CPU.arm?
       url "https://github.com/memovai/memov/releases/download/v0.0.8/mem-macos-arm64.tar.gz"
-      sha256 "5d4ac3ab36372cf40d9419ad143296b00b82f03207042482fb2c838131e304d8"
+      sha256 "9eabdb6ddd49893d36046cff897cb11a7ce81df71bf8fe78a999fa539457c522"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/memovai/memov/releases/download/v0.0.8/mem-linux-x86_64.tar.gz"
-      sha256 "0f4e908a175ea6f9fc86eb0ab8a3841bef2ceb774fe5b03104c4c5cc9b074eec"
+      sha256 "e88d3f2276722ffdd53d8ce59883908fe960623e7d8b01b628e7e6b3681e9e21"
     end
   end
 
